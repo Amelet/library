@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Library</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    
+</head>
+<body>
+    <div class="header-side">
+        <div class="site-name">Add your book</div>
+        <form id="addBookForm" >
+            <input type="text" id="title" placeholder="title">
+            <input type="text" id="author" placeholder="author">
+            <input type="number" id="pages" placeholder="number of pages">
+            <div>
+                <input type="checkbox" name="haveRead" id="haveRead" value="false" onchange="if (this.checked) this.value=1; else this.value=0">
+                <label for="haveRead">I have read this book</label>
+                          
+            </div>
+            <input id="submit" type="submit" value="Add Book">
+        </form>
+    </div>
+    <div class="container">
+        <p class="cont-name">Library:</p>
+        <div class="book-cards">
+        </div>
+    </div>
+    <div class="footer">Credits: photos by <a href="https://unsplash.com/@marekpiwnicki?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Marek Piwnicki</a> on <a href="https://unsplash.com/t/textures-patterns?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a>
+    </div>
+<script src="app.js"></script>
+</body>
+</html>
